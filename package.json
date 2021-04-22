@@ -8,6 +8,7 @@
   "dependencies": {
     "did-resolver": "^3.1.0",
     "express": "^4.17.1",
+    "infra-did-js": "^0.4.2",
     "infra-did-resolver": "^0.3.1"
   },
   "devDependencies": {

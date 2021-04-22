@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
-const PORT = 8080;
+
+import config from '../config.json';
 
 app.get('/', (req, res, next) => {
     res.send("Hello world");
 })
 
-var server = app.listen(PORT, () => {
-    console.log(`Example app running on ${PORT}`)
+require('./routes/v1')(app);
+
+var server = app.listen(config.port, () => {
+    console.log(`Example app running on ${config.port}`)
 })

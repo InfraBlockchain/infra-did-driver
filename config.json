@@ -1,0 +1,17 @@
+{
+    "port": 8080,
+    "resolverConfig": {
+        "networks" : [
+            {
+                "networkId": "coov",
+                "registryContract": "infradidregi",
+                "rpcEndpoint": "http://kdca.osong.bc.coov.io:9180/"
+            },
+            {
+                "networkId": "01",
+                "registryContract": "infradidregi",
+                "rpcEndpoint": "http://kdca.osong.bc.coov.io:9180/"
+            }
+        ]
+    }
+}
