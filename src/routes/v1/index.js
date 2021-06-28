@@ -11,6 +11,11 @@ const prefix = "/1.0";
 const testDID = "did:infra:coov:PUB_K1_8PwG7of5B8p9Mpaw6XzeyYtSWJyeSXVtxZhPHQC5eZxZCkqiLU"
 
 module.exports = function (app) {
+    app.get(prefix + '/identifiers/:did/status', async (req, res) => {
+        const did = req.params.did;
+        const doc = await resolver.resolve(did);
+        res.json({ isRevoked: doc?.didDocumentMetadata?.disabled === true })
+    })
     app.get(prefix + '/identifiers/:did', async (req, res) => {
         const did = req.params.did;
         const doc = await resolver.resolve(did);
