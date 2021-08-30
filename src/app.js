@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 
 import config from '../config.json';
+app.use(express.json())
 
 app.get('/', (req, res, next) => {
     res.send("Hello world");

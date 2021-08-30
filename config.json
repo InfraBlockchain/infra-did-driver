@@ -9,8 +9,8 @@
             },
             {
                 "networkId": "01",
-                "registryContract": "infradidregi",
-                "rpcEndpoint": "http://kdca.osong.bc.coov.io:9180/"
+                "registryContract": "fmapkumrotfc",
+                "rpcEndpoint": "https://api.testnet.eos.io"
             }
         ]
     }
